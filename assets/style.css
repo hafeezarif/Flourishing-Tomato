@@ -16,13 +16,8 @@
   
   main {
     display: flex;
-  }
-  
-  aside {
-    flex: 30%;
-    background-color: #b9c6ae;
-    padding: 20px;
-    flex-wrap: wrap;
+    margin-left: 160px;
+    padding: 0px 10px;
   }
   
   section {
@@ -38,6 +33,30 @@
     color: #fff;
   }
   
+  .aside {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .aside a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+
+  .aside a:hover {
+    color: #333;
+  }
+
   .sample-img {
     background-color: #fff;
     width: 100%;
