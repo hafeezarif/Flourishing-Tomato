@@ -10,7 +10,7 @@
   header {
     padding: 60px;
     text-align: center;
-    background: rgb(249, 60, 60);
+    background: rgb(134, 20, 20);
     color: #fff;
   }
   
@@ -29,7 +29,7 @@
   footer {
     padding: 20px;
     text-align: center;
-    background: rgb(249, 60, 60);
+    background: rgb(134, 20, 20);
     color: #fff;
   }
   
@@ -40,7 +40,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(106, 140, 106);
+    background-color: rgb(5, 39, 5);
     overflow-x: hidden;
     padding-top: 20px;
   }
