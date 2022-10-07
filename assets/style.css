@@ -1,41 +1,41 @@
 * {
     box-sizing: border-box;
   }
-  
-  body {
+
+body {
     font-family: Arial;
     margin: 0;
   }
   
-  header {
+header {
     padding: 60px;
     text-align: center;
     background: rgb(134, 20, 20);
     color: #fff;
   }
   
-  main {
+main {
     display: flex;
     margin-left: 160px;
     padding: 0px 10px;
   }
   
-  section {
+section {
     flex: 70%;
     background-color: #fff;
     padding: 20px;
   }
   
-  footer {
+footer {
     padding: 20px;
     text-align: center;
     background: rgb(134, 20, 20);
     color: #fff;
   }
-  
-  .aside {
+
+.aside {
     height: 100%;
-    width: 160px;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -45,7 +45,7 @@
     padding-top: 20px;
   }
 
-  .aside a {
+.aside a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -53,11 +53,30 @@
     display: block;
   }
 
-  .aside a:hover {
-    color: #333;
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
 
-  .sample-img {
+.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+.sample-img {
     background-color: #fff;
     width: 100%;
     padding: 20px;
@@ -65,12 +84,12 @@
     border: 1px solid black;
   }
   
-  @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   }
 
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   }
   
