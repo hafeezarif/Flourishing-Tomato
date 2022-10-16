@@ -5,20 +5,17 @@ const nowPlayingGrid = document.querySelector(".now-playing-grid");
 const MOVIE_DB_API_KEY = "ef36b87931742344a95578159a02b2d1";
 const nowPlayingMoviesURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${MOVIE_DB_API_KEY}&language=en-US&page=1`;
 
-document.addEventListener("DOMContentLoaded", () => {
-  fetch(nowPlayingMoviesURL).then((response) => {
-    response.json().then((data) => {
-      data.results.forEach((movie) => {
-        console.log(movie);
-        const movieImageURL = `https://image.tmdb.org/t/p/w200/${movie.poster_path}`;
-        const movieHref = `movie.html?title=${movie.title}&id=${movie.id}&release_date=${movie.release_date}&poster_path=${movie.poster_path}&overview=${movie.overview}`;
-        const movieCardTemplate = `
+fetch(nowPlayingMoviesURL).then((response) => {
+  response.json().then((data) => {
+    data.results.forEach((movie) => {
+      const movieImageURL = `https://image.tmdb.org/t/p/w200/${movie.poster_path}`;
+      const movieHref = `movie.html?title=${movie.title}&id=${movie.id}&release_date=${movie.release_date}&poster_path=${movie.poster_path}&overview=${movie.overview}`;
+      const movieCardTemplate = `
         <a class="now-playing-card" href="${movieHref}">
         <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img">
         <h3 class="now-playing-title">${movie.title}</h3>
         </a>`;
-        nowPlayingGrid.innerHTML += movieCardTemplate;
-      });
+      nowPlayingGrid.innerHTML += movieCardTemplate;
     });
   });
 });

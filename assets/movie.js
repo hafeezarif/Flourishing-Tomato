@@ -1,18 +1,21 @@
+const movieSection = document.querySelector(".movie-section");
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
-const id = params.id; // "123"
-const title = params.title; // "The Matrix"
-const releaseDate = params.release_date; // "1999-03-31"
-const poster_path = params.poster_path; // "/hEpWvX6Bp79eLxY1kX5ZZJcme5U.jpg"
-const overview = params.overview; // "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
 
-console.log({ id, title, releaseDate, poster_path, overview });
+const { id, title, release_date, poster_path, overview } = params;
+const NY_TIMES_API_KEY = "W7EYlsCUiNLdyGGchcLIaPQx0iaAkkua";
+const MovieReviewURL = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${title}&api-key=${NY_TIMES_API_KEY}`;
 
-const movieSection = document.querySelector(".movie-section");
-movieSection.innerHTML = `
-<img src="https://image.tmdb.org/t/p/w400${poster_path}" alt="${title}" />
-<h2 class="movie-title">${title}</h2>
-<span class="movie-release-date">${releaseDate}</span>
-<p class="movie-overview">${overview}</p>
-`;
+fetch(MovieReviewURL).then((response) => {
+  response.json().then((data) => {
+    console.log(data);
+    movieSection.innerHTML = `
+        <img src="https://image.tmdb.org/t/p/w400${poster_path}" alt="${title}" />
+        <h2 class="movie-title">${title}</h2>
+        <span class="movie-release-date">${release_date}</span>
+        <p class="movie-overview">${overview}</p>
+        <a href="${data.results[0]?.link.url}" target="_blank" class="movie-review-link">Read Review</a>
+        `;
+  });
+});
