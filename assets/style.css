@@ -1,3 +1,4 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 * {
   box-sizing: border-box;
 }
@@ -31,53 +32,6 @@ footer {
   text-align: center;
   background: rgb(134, 20, 20);
   color: #fff;
-}
-
-.aside {
-  height: 100%;
-  width: 180px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(5, 39, 5);
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.aside a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-}
-
-#collapsible-toggle {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active,
-#collapsible-toggle:hover {
-  background-color: #ccc;
-}
-
-#collapsible-content {
-  padding: 0 18px;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-#collapsible-content.hidden {
-  display: none;
 }
 
 .sample-img {

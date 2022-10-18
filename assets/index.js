@@ -1,5 +1,3 @@
-const collapsibleToggle = document.querySelector("#collapsible-toggle");
-const collapsibleContent = document.querySelector("#collapsible-content");
 const nowPlayingGrid = document.querySelector(".now-playing-grid");
 
 const MOVIE_DB_API_KEY = "ef36b87931742344a95578159a02b2d1";
@@ -15,14 +13,11 @@ fetch(nowPlayingMoviesURL).then((response) => {
         <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img">
         <h3 class="now-playing-title">${movie.title}</h3>
         </a>`;
-      nowPlayingGrid.innerHTML += movieCardTemplate;
+      nowPlayingGrid.innerHTML += movieCardTemplate
     });
   });
 });
 
-collapsibleToggle.addEventListener("click", () => {
-  collapsibleContent.classList.toggle("hidden");
-});
 
 // search
 //https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=W7EYlsCUiNLdyGGchcLIaPQx0iaAkkua
