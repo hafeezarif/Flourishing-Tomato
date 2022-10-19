@@ -10,8 +10,8 @@ fetch(nowPlayingMoviesURL).then((response) => {
   
       const movieHref = `movie.html?title=${movie.title}&id=${movie.id}&release_date=${movie.release_date}&poster_path=${movie.poster_path}&overview=${movie.overview}`;
 
-      const movieCardTemplate = `<div class="columns ">
-      <div class="column"><a class="now-playing-card" href="${movieHref}">
+      const movieCardTemplate = `<div class="rows">
+      <div class="row"><a class="now-playing-card" href="${movieHref}">
       <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img">
       <h3 class="now-playing-title">${movie.title}</h3></div>
       `;
