@@ -9,13 +9,12 @@ A web application designed for publishing reviews and ratings for movies you wat
 - We learned how to use API's. 
 - Are you having trouble finding a good movie to watch? Well Flourishing Tomato can help you fix that problem by giving you the top 20 movies in the world and providing reviews with it.
 
+## Usage
 
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-- git hub ...
-
+Navigate to the website and scroll through to see the movies you wanna find.
+![ScreenShot1](assets/1.png)
+Clicking on the Movie/Title will bring you to a separate webpage with further details.
+![ScreenShot2](assets/2.png)
 
 ## Credits
 Hafeezarif
