@@ -12,7 +12,7 @@ fetch(nowPlayingMoviesURL).then((response) => {
 
       const movieCardTemplate = `
       <a class="now-playing-card" href="${movieHref}">
-      <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img ">
+      <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img">
       <h3 class="now-playing-title is-size-4 is-family-monospace has-text-weight-bold has-text-danger-dark">${movie.title}</h3>
       `;
     

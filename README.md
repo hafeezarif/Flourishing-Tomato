@@ -16,6 +16,10 @@ Navigate to the website and scroll through to see the movies you wanna find.
 Clicking on the Movie/Title will bring you to a separate webpage with further details.
 ![ScreenShot2](assets/2.png)
 
+Link to Live Website:
+
+https://hafeezarif.github.io/Flourishing-Tomato/ 
+
 ## Credits
 Hafeezarif
 Tyreseking
