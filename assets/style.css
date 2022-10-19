@@ -9,29 +9,12 @@ body {
 }
 
 header {
-  padding: 60px;
   text-align: center;
-  background: rgb(134, 20, 20);
-  color: #fff;
 }
 
 main {
   display: flex;
-  margin-left: 95px;
   padding: 0px 10px;
-}
-
-section {
-  flex: 70%;
-  background-color: #fff;
-  padding: 20px;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background: rgb(134, 20, 20);
-  color: #fff;
 }
 
 

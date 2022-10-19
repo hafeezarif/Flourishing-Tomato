@@ -11,11 +11,11 @@ fetch(MovieReviewURL).then((response) => {
   response.json().then((data) => {
     console.log(data);
     movieSection.innerHTML = `
-        
-        <h2 <div class="block is-size-2 has-text-right "> ${title}</h2>
-        <span <div class="block has-text-right"> ${release_date}</span>
+        <div class="is-align-items-center>
+        <h2 <div class="block is-size-2"> ${title}</h2>
+        <span <div class="block is-size-6"> ${release_date}</span>
         <p <div class="block has-text-right"> ${overview}</p>
-        <a href="${data.results[0]?.link.url}" target="_blank" <div class="block has-text-right">Read Review</a> 
+        <a href="${data.results[0]?.link.url}" target="_blank">Read Review</a> 
         <img src="https://image.tmdb.org/t/p/w400${poster_path}" alt="${title}" />`;
   });
 });
