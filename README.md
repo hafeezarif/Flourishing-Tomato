@@ -12,9 +12,9 @@ A web application designed for publishing reviews and ratings for movies you wat
 ## Usage
 
 Navigate to the website and scroll through to see the movies you wanna find.
-![ScreenShot1](assets/SS1.png)
+![ScreenShot1](assets/images/SS1.png)
 Clicking on the Movie/Title will bring you to a separate webpage with further details.
-![ScreenShot2](assets/SS2.png)
+![ScreenShot2](assets/images/SS2.png)
 
 Link to Live Website:
 
