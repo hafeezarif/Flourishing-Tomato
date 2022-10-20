@@ -12,8 +12,8 @@ fetch(nowPlayingMoviesURL).then((response) => {
 
       const movieCardTemplate = `
       <a class="now-playing-card" href="${movieHref}">
-      <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img">
-      <h3 class="now-playing-title is-size-4 is-family-monospace has-text-weight-bold has-text-danger-dark">${movie.title}</h3>
+      <img src="${movieImageURL}" alt="${movie.title} poster" class="now-playing-img mx-6">
+      <h3 class="now-playing-title is-size-6 is-family-monospace has-text-centered has-text-weight-bold has-text-danger-dark mx-3 my-3">${movie.title}</h3>
       `;
     
       nowPlayingGrid.innerHTML += movieCardTemplate 
